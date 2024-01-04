@@ -99,7 +99,7 @@ def load_Pathmnist(type: str, normalization=True, flatten=True):
     x_train_aug = []
     y_train_aug = []
     aug = Augment()
-    for i in range(1000):
+    for i in range(50000):
         idx = random.randint(0, len(x_train) - 1)
         fig = x_train[idx]
         y = y_train[idx]
